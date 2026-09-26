@@ -1,0 +1,17 @@
+name: Demo Message
+description: Outputs the repository classic multi-line demo message as a workflow step
+author: Joel Shearon
+
+inputs:
+  separator:
+    description: Separator when joining message lines
+    required: false
+    default: '\n'
+
+outputs:
+  message:
+    description: The formatted demo message
+
+runs:
+  using: node20
+  main: index.js
